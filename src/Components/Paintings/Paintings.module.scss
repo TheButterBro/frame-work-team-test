@@ -1,0 +1,38 @@
+.body {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 20px;
+    margin-top: 45px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    h2 {
+        font-weight: 300;
+        color: var(--color);
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 425px) {
+    .body {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 425px) {
+
+}
