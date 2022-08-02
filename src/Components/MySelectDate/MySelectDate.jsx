@@ -58,7 +58,6 @@ function MySelectDate({ theme }) {
         className={
           isOpened ? styles.select : `${styles.closed} ${styles.select}`
         }
-        onClick={handleIsOpened}
       >
         <p>{value}</p>
         <div className={styles.buttons}>
@@ -77,12 +76,14 @@ function MySelectDate({ theme }) {
               className={styles.appear}
               src="images/icon_select.svg"
               alt="Открыть фильтр"
+              onClick={handleIsOpened}
             />
           ) : (
             <img
               className={styles.appear}
               src="images/icon_select_light.svg"
               alt="Открыть фильтр"
+              onClick={handleIsOpened}
             />
           )}
         </div>
